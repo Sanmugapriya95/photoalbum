@@ -3,7 +3,7 @@ var router = express.Router();
 var multer = require('multer')
 let UserModel = require('./users')
 
-
+// Destination path
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, 'public/images/uploads')
